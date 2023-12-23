@@ -3,7 +3,7 @@ package com.redkale.examples.hello;
 import org.redkale.net.http.RestService;
 import org.redkale.service.Service;
 
-@RestService(automapping = true)
+@RestService(autoMapping = true)
 public class HelloService implements Service {
 
     public String sayHello() {

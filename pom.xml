@@ -5,8 +5,20 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.redkale.examples</groupId>
-    <artifactId>redkale-helloword</artifactId>
+    <artifactId>redkale-examples</artifactId>
+    <name>RedkaleExamplesProject</name>   
     <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+    
+    <modules>
+        <module>redkale-helloword</module>
+    </modules>
     
     <dependencies>
         <dependency>
@@ -14,14 +26,13 @@
             <artifactId>redkale</artifactId>
             <version>2.8.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>org.redkale.examples</groupId>
+            <artifactId>redkale-helloword</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-    </properties>
-        
+    
     <build>
         <finalName>redkale-helloword</finalName>
         <plugins>
